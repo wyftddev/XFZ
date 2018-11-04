@@ -1,0 +1,96 @@
+{% extends 'base/front_base.html' %}
+
+{% block title %}
+首页
+{% endblock %}
+{% block head %}
+    <script src="{% static 'js/index.min.js' %}" type="text/javascript"></script>
+{#    <link rel="stylesheet" href="{% static 'css/news/news_detail.min.css' %}">#}
+    <link rel="stylesheet" href="{% static 'css/index.min.css' %}">
+{% endblock %}
+{% block main %}
+    <div class="main">
+    <div class="wrapper">
+        <div class="news-wrapper">
+            <div class="banner-group" id="banner-group">
+                <ul class="banner-ul" id="banner-ul">
+                    <li>
+                        <a href="#">
+                            <img src="https://static-image.xfz.cn/1523588994_243.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://static-image.xfz.cn/1523504442_455.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://static-image.xfz.cn/1521444982_469.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://static-image.xfz.cn/1522742329_629.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="https://static-image.xfz.cn/1529560399_230.jpg" alt=""></a></li>
+                </ul>
+                <span class="arrow left-arrow">‹</span>
+                <span class="arrow right-arrow">›</span>
+                <div class="page-control-group">
+                    <ul class="page-control">
+                    </ul>
+                </div>
+            </div>
+            <div class="list-outer-group">
+                <ul class="list-tab">
+                    <li class="active"><a href="#">最新资讯</a></li>
+                    <li><a href="#">热点</a></li>
+                    <li><a href="#">深度报道</a></li>
+                    <li><a href="#">干货分享</a></li>
+                    <li><a href="#">投资人说</a></li>
+                </ul>
+                <ul class="list-inner-group">
+                    <li>
+                        <div class="thumbnail-group">
+                            <a href="#">
+                                <img src="https://static-image.xfz.cn/1532592103_704.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="news-group">
+                            <p class="title"><a href="#">拼多多领衔三家中概股同日上市，纽约的钟比香港的还好敲？</a></p>
+                            <p class="desc">不管融资前景如何，先占个坑再说是一些公司上市的心态，退步讲，融资之外，能登陆美股/港股市场，对公司品牌提升显而易见，所以，能敲钟，就去敲吧！</p>
+                            <p class="more">
+                                <span class="category">其他</span>
+                                <span class="pub-time">1小时前</span>
+                                <span class="author">知了课堂</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail-group">
+                            <a href="#">
+                                <img src="https://static-image.xfz.cn/1532998253_95.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="news-group">
+                            <p class="title"><a href="#">【不凡早报】爱奇艺的股价或在今年达到50美元；ofo发表声明：与滴滴谈判已接近尾声为假消息</a></p>
+                            <p class="desc">2018年二季度中国智能手机出货量同比增长20%</p>
+                            <p class="more">
+                                <span class="category">热点</span>
+                                <span class="pub-time">1小时前</span>
+                                <span class="author">知了课堂</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="load-more-group">
+                    <button class="load-more">查看更多</button>
+                </div>
+            </div>
+        </div>
+            {% include 'common/sidebar.html' %}
+    </div>
+</div>
+{% endblock %}
